@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/my.css" rel="stylesheet" type="text/css">
+<title>天使贷</title>
+</head>
+<body id="my_creditcardadmin_add" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <i class="header_l" onclick="javascript:history.back(-1); "><img src="images/back.png" alt="" class="h32 vtt"></i>
+        <span class="f34">发布新信用卡</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt88">
+        <aside class="p0_24 bgwh mb20">
+            <p class="f32 lh100">信用卡介绍：</p>
+            <textarea class="f26 w h380" placeholder="请编辑信用卡信息"></textarea>
+        </aside>
+        <aside class="mb20 bgwh p40_24 tc">
+            <p class="f30 g6 mb35 tl">信用卡照片：</p>
+            <div class="dib ">
+                <label for="up_img_zheng" class="dib" id="imgdiv_zheng"><img src="images/my/bank_logo.png" alt="" id="imgShow_zheng" class="h210"></label>
+                <input type="file" id="up_img_zheng" class="dn" />
+            </div>
+            <div class="dib ml50">
+                <label for="up_img_fan" class="dib" id="imgdiv_fan"><img src="images/my/bank.png" alt="" id="imgShow_fan" class="h210"></label>
+                <input type="file" id="up_img_fan" class="dn" />
+            </div>
+        </aside>
+        <aside class="mt108 btn auto">
+            <p class="f36 wh tc">提交</p>
+        </aside>
+    </main>
+    <!-- 遮罩 -->
+    <aside class="shadeall dn"></aside>
+    <!-- 遮罩结束 -->
+    <aside class="bgwh radius10 abs zx2 dn">
+        <section class="tc">
+            <p class="f32 mb30">恭喜你发布成功</p>
+            <p class="f32 mb30">用户可以申请此信用卡了</p>
+            <hr class="mb30">
+            <a class="pct50 f36 g28D4D6 tc pb25">我知道了</a>
+        </section>
+    </aside>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- 图片预览 -->
+<script type="text/javascript" src="js/uploadPreview.js"></script>
+<script type="text/javascript">
+$(function(){
+    // 图片预览
+    window.onload = function () { 
+            new uploadPreview({ UpBtn: "up_img_zheng", DivShow: "imgdiv_zheng", ImgShow: "imgShow_zheng" });
+            new uploadPreview({ UpBtn: "up_img_fan", DivShow: "imgdiv_fan", ImgShow: "imgShow_fan" });
+        }
+    // 弹框
+    $(".btn").click(function(){
+        $(".shadeall").show();
+        $(".zx2").show();
+        document.documentElement.style.overflow='hidden';
+        document.body.style.overflow='hidden';
+    })
+    $(".zx2 a").click(function(){
+        $(".dn").hide();
+        document.documentElement.style.overflow='auto';
+        document.body.style.overflow='auto';
+    })
+})
+</script>
+</html>

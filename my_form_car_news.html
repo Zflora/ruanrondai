@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<title>天使贷</title>
+</head>
+<body id="index_car_news" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <i class="header_l" onclick="javascript:history.back(-1); "><img src="images/back.png" alt="" class="h32 vtt"></i>
+        <span class="f34">汽车信息</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt88">
+        <aside class="mb20 bgwh">
+            <section class="bbe p0_24">
+                <span class="lh100 f30 g6 w170 dib">所有人：</span>
+                <span class="f26 vtt w490">请输入汽车所有人姓名</span>
+            </section>
+            <section class="bbe p0_24">
+                <span class="lh100 f30 g6 w170 dib">车牌号：</span>
+                <span class="f26 vtt w490">请输入房屋坐落地址</span>
+            </section>
+            <section class="p0_24">
+                <span class="lh100 f30 g6 w170 dib">品牌型号：</span>
+                <span class="f26 vtt w490">请输入汽车品牌型号</span>
+            </section>
+        </aside>
+        <aside class="mb20 bgwh p40_24 tc">
+            <p class="f30 g6 mb35 tl">行驶证照片：</p>
+            <label for="up_img" class="dib" id="imgdiv"><img src="images/index/car_news_news.png" alt="" id="imgShow" class="h210"></label>
+            <input type="file" id="up_img" class="dn" />
+        </aside>
+    </main>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- 图片预览 -->
+<script type="text/javascript" src="js/uploadPreview.js"></script>
+<script type="text/javascript">
+$(function(){
+    // 图片预览
+    window.onload = function () { 
+            new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
+        }
+})
+</script>
+</html>

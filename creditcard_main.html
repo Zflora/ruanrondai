@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/creditcard.css" rel="stylesheet" type="text/css">
+<title>天使贷</title>
+</head>
+<body id="creditcard_main" class="bgwh mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <i class="header_l" onclick="javascript:history.back(-1); "><img src="images/back.png" alt="" class="h32 vtt"></i>
+        <span class="f34">信用卡详情</span>
+        <i class="header_r">
+            <img src="images/college.png" alt="" class="h32 mr24 vtt">
+            <img src="images/share.png" alt="" class="h32 vtt" id="share">
+        </i>
+    </header>
+    <!-- header_end -->
+    <main class="mt108 pt20" align="center">
+        <img src="images/creditcard/pic_gongshang.png" alt="" class="w500h350 mb40">
+        <section class="tj p0_24">
+            <p class="f24 lh40 indent2">工银大来信用卡是大来/银联双品牌标识信用卡,介质为磁条,卡类别为个人卡，等级分为金卡和普卡。此产品是人民币与美元双币卡，给予持卡人一定信用额度，持卡人可在信用额度内先消费后还款。</p>
+            <p class="f24 lh40 indent2">对于信用额度内的消费透支，持卡人在对账单规定的还款日期前全部还款，即可享受最短25天、最长56天的免息还款期。工银大来信用卡可在工商银行网点和特约商户，带有“银联”标识的特约商户和自动取款机，以及境外带有“Diners Club ”、“DISCOVER”、“PULSE”标识的受理点使用。</p>
+            <p class="f24 lh40 indent2">强大便捷的金融服务</p>
+            <p class="f24 lh40 indent2">★ 循环信用，充裕免息还款期</p>
+            <p class="f24 lh40 indent2">★ 众多的还款渠道，便捷的自动还款</p>
+            <p class="f24 lh40 indent2">★ 电话、POS、柜面、网银等多样分期付款方式</p>
+            <p class="f24 lh40 indent2">★ 短信余额变动提醒定制服务</p>
+            <p class="f24 lh40 indent2">★ 24小时网上、电话银行服务</p>
+            <p class="f24 lh40 indent2">★ 纸质或电子对账服务</p>
+            <p class="f24 lh40 indent2">★ 积分回馈计划</p>
+            <p class="f24 lh40 indent2">★ 免费到期还款短信提醒</p>
+            <p class="f24 lh40 indent2">★ 约定账户自动还款</p>
+        </section>
+    </main>
+    <footer class="footer_btn" onclick="javascript:window.location.href='creditcard_form_one.html','_self'">
+        <p class="wh f36 tc">我要申请</p>
+    </footer>
+    <!-- 遮罩 -->
+    <aside class="shadeall dn"></aside>
+    <!-- 遮罩结束 -->
+    <!-- 分享 -->
+    <aside class="footer bgwh zx2 dn">
+        <p class="f32 tc mb50 pt30">分享到</p>
+        <ul class="mb60">
+            <li class="dib pt20">
+                <img src="images/weixin.png" alt="" class="h100 mb40">
+                <p class="f30 g3">微信</p>
+            </li>
+            <li class="dib pt20">
+                <img src="images/weixin1.png" alt="" class="h100 mb40">
+                <p class="f30 g3">朋友圈</p>
+            </li>
+            <li class="dib pt20">
+                <img src="images/qq.png" alt="" class="h100 mb40">
+                <p class="f30">QQ</p>
+            </li>
+            <li class="dib pt20">
+                <img src="images/zone.png" alt="" class="h100 mb40">
+                <p class="f30">空间</p>
+            </li>
+        </ul>
+        <div class="btn auto mb26">
+            <p class="f36 wh tc">取消</p>
+        </div>
+    </aside>
+    <!-- 分享结束 -->
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+// share
+    $("#share").click(function(){
+        $(".shadeall").show();
+        $(".footer").show();
+        document.documentElement.style.overflow='hidden';
+        document.body.style.overflow='hidden';
+    })
+    $(".shadeall").click(function(){
+        $(".shadeall").hide();
+        $(".footer").hide();
+        document.documentElement.style.overflow='auto';
+        document.body.style.overflow='auto';
+    })
+    $(".btn").click(function(){
+        $(".shadeall").hide();
+        $(".footer").hide();
+        document.documentElement.style.overflow='auto';
+        document.body.style.overflow='auto';
+    })
+</script>
+</html>

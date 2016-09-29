@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/my.css" rel="stylesheet" type="text/css">
+<title>天使贷</title>
+</head>
+<body id="my_why" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <i class="header_l" onclick="javascript:history.back(-1); "><img src="images/back.png" alt="" class="h32 vtt"></i>
+        <span class="f34">常见问答</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt108">
+        <section class="bgwh pl24 mb20" onclick="javascript:window.location.href='my_why_main.html','_self'">
+            <img src="images/ask.png" alt="" class="h45 pt24 pb25 dib abs">
+            <span class="f32 lh40 ml75 vtt pr24 dib pt24 pb25">在新加坡工作，在上海买房需要材料？在新加坡工作，在上海买房需要材料？</span>
+            <hr class="mb35">
+            <p class="f26 g6 pb25 lh40 mr24">你好！在职证明不是必须的证明材料，但是必须有签字，我们国家和新加坡的制度不一样，我们国家更注重公章，有些国家则更注重签字，最简</p>            
+        </section>
+        <section class="bgwh pl24 mb20" onclick="javascript:window.location.href='my_why_main.html','_self'">
+            <img src="images/ask.png" alt="" class="h45 pt24 pb25 dib abs">
+            <span class="f32 lh40 ml75 vtt pr24 dib pt24 pb25">在新加坡工作，在上海买房需要材料？在新加坡工作，在上海买房需要材料？</span>
+            <hr class="mb35">
+            <p class="f26 g6 pb25 lh40 mr24">你好！在职证明不是必须的证明材料，但是必须有签字，我们国家和新加坡的制度不一样，我们国家更注重公章，有些国家则更注重签字，最简</p>            
+        </section>
+        <section class="bgwh pl24 mb20" onclick="javascript:window.location.href='my_why_main.html','_self'">
+            <img src="images/ask.png" alt="" class="h45 pt24 pb25 dib abs">
+            <span class="f32 lh40 ml75 vtt pr24 dib pt24 pb25">在新加坡工作，在上海买房需要材料？</span>
+            <hr class="mb35">
+            <p class="f26 g6 pb25 lh40 mr24">你好！在职证明不是必须的证明材料，但是必须有签字，我们国家和新加坡的制度不一样，我们国家更注重公章，有些国家则更注重签字，最简</p>            
+        </section>
+    </main>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+    //只显示固定字符  之后...
+    $(function (){
+            for(var i=0;i<$('.pb25').length;i++){
+                var bdphone = $('.pb25').eq(i).text(); 
+                var mphone = bdphone.substr(0, 50) + '...' ;
+                $('.pb25').eq(i).text(mphone);
+            }
+        })
+</script>
+</html>

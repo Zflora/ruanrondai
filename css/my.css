@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*my*/
+#my main .p40_0,#my_index main .p80_0{background: url(../images/my/my_bg.png) no-repeat;background-size: 100% 100%;}
+/*enter*/
+#enter header .header_l{width: 0.52rem;height: 0.52rem;border-radius: 100%;background:rgba(0,51,51,0.5);display: inline-block;}
+#enter header{width: 100%;height: 6.5rem;background: url(../images/my/enter_bg.png) no-repeat;background-size: 100% 100%;}
+#enter main,#registered main,#my_set_pass main{padding:0 0.65rem;}
+#enter main input,#registered main>input,#my_set_pass main input{width: 6.2rem;border-bottom: 1px solid #28CAD6;padding-bottom: 0.46rem;}
+#enter main a,#registered main a,#my_set_pass main a{width: 6.2rem;display: inline-block;border-radius: 0.1rem;margin-top: 1.12rem}
+/*registered*/
+#registered main a.f30,#my_set_pass main a.f30{width: 2.2rem;line-height: 0.73rem;position: absolute;margin-top: -1.1rem;right: 0.65rem;border: 1px solid #28d4d6;}
+/*my_index*/
+#my_index main .p80_0 div p:last-child{opacity: 0.5;}
+.my_index_news{width: 0.33rem;height: 0.33rem;margin-top: 0.01rem;background: #f33;opacity: .7;margin-right: 0.2rem;text-align: center;line-height: 0.35rem}
+/*my_infor_sax*/
+#my_infor_sax .radio{position: absolute;right: 0.24rem;margin-top: 0.4rem;width: 0.4rem;height: 0.3rem}
+#my_infor_sax .radio_input{background: none}
+#my_infor_sax .radio_on{background: url(../images/my/my_yes.png) no-repeat;background-size: 100% 100%}
+/*index_loan_unsuccess*/
+#index_loan_unsuccess .b28d4d6{border:1px solid #28d4d6;}
+#index_loan_unsuccess a.w200:first-child{margin-left: 1rem;margin-right: 1.14rem}
+/*my_set_loanenter*/
+#my_set_loanenter main ul li{display: inline-block;}
+#my_set_loanenter main ul li span{width: 0.6rem;line-height: 0.6rem;text-align: center;display: inline-block;margin-bottom: 0.3rem}
+#my_set_loanenter main ul li:nth-child(even){background: url(../images/my/next.png) no-repeat;background-size: 100% 100%;width: 1.45rem;height: 0.17rem;vertical-align: 0.8rem}
+/*my_loanadmin*/
+#my_loanadmin h1,#my_creditcardadmin h1{width: 2rem;box-sizing: border-box;overflow: hidden;border-right: 1px solid #28d4d6;color: #28d4d6;float: left;background: #fff;}
+#my_loanadmin h1:last-child,#my_creditcardadmin h1:last-child{border:0;}
+.h1_on{color: #fff!important;background: #28D4D6!important;}
+#my_loanadmin main>.bd28d4d6,#my_creditcardadmin main>.bd28d4d6{width:6rem;margin: 0 auto;border:1px solid #28d4d6;height: 0.6rem}
+#my_loanadmin .p36_24>p{width: 1.1rem;position: absolute;right: 0.24rem;margin-top: -1rem;}
+/*my_creditcardadmin*/
+#my_creditcardadmin .ml130{margin-left: 2.5rem}
+#my_creditcardadmin section.bgwh{position: absolute;right: 0;left: 0;bottom: 0;top: 1.9rem}
+/*my_creditcardadmin_usermain*/
+#my_creditcardadmin_usermain #reject,#my_creditcardadmin_usermain #pass{width: 2.4rem;display: inline-block;}
+.zx2{width: 5.6rem;left: 50%;margin-left: -2.8rem;padding: 0.4rem 0;bottom: 5rem}
+#my_creditcardadmin_usermain #reject_on a,#my_creditcardadmin_usermain #pass_on a{width: 49.5%;display: inline-block;float: left;}
+#my_creditcardadmin_usermain #reject_on .cancel,#my_creditcardadmin_usermain #pass_on .cancel{border-right: 1px solid #eee;}

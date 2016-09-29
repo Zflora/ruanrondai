@@ -1,0 +1,17 @@
+/*header*/
+header{position: fixed;left: 0;right:0;top: 0;text-align: center;line-height: 0.88rem;color: #fff;height: 0.88rem;z-index: 1;background: #28CAD6}
+.header_l{position: absolute;left: 0.24rem;}
+.header_r{position: absolute;right: 0.24rem;}
+footer{width: 100%;height: 0.98rem;background: #fff;position: fixed;bottom: 0;border-top: 1px solid #ccc;background: #fbfefe;}
+footer ul li{display: inline-block;width: 33%;text-align: center;}
+.index,.index_on,.tesk,.tesk_on,.my,.my_on{width: 0.4rem;margin: 6% 42%;height: 0.4rem}
+.index{background: url(../images/footer/loan.png) no-repeat ;background-size: 100%;}
+.index_on{background: url(../images/footer/loan_on.png) no-repeat ;background-size: 100%;}
+.tesk{background: url(../images/footer/creditcard.png) no-repeat ;background-size: 100%;}
+.tesk_on{background: url(../images/footer/creditcard_on.png) no-repeat ;background-size: 100%;}
+.my{background: url(../images/footer/us.png) no-repeat ;background-size: 100%;}
+.my_on{background: url(../images/footer/us_on.png) no-repeat ;background-size: 100%;}
+/*my_creditcardadmin_informain*/
+#my_creditcardadmin_informain .radio,#my_creditcardadmin_othermain .radio{width: 0.33rem;height: 0.33rem;}
+#my_creditcardadmin_informain .radio_input,#my_creditcardadmin_othermain .radio_input{background: url(../images/radio.png) no-repeat;background-size: 100% 100%;}
+#my_creditcardadmin_informain .radio_on,#my_creditcardadmin_othermain .radio_on{background: url(../images/radio_on.png) no-repeat;background-size: 100% 100%;}

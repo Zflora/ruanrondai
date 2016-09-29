@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/my.css" rel="stylesheet" type="text/css">
+<title>天使贷</title>
+</head>
+<body id="my_creditcardadmin_usermain" class="mb120">
+<form action="">  
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <i class="header_l" onclick="javascript:history.back(-1); "><img src="images/back.png" alt="" class="h32 vtt"></i>
+        <span class="f34">用户信息</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt88">
+        <img src="images/background.png" alt="" class="h180 abs">
+        <aside class="p0_24 h180 mb20 rel">
+            <p class="f36 lh160" align="center">中国工商银行大来信用卡</p>
+        </aside>
+        <aside class="bgwh p40_24 mb20">
+            <p class="f30 g6 mb40">中文姓名：<span class="f32 g3">程暮雪</span></p>
+            <p class="f30 g6 mb40">姓名拼音：<span class="f32 g3">muchengxue</span></p>
+            <p class="f30 g6 mb40">身份证号：<span class="f32 g3">411403198906231230</span></p>
+            <p class="f30 g6 mb40">有效期至：<span class="f32 g3">2016/7/7</span></p>
+            <p class="f30 g6 mb40">所在地区：<span class="f32 g3">上海市松江区</span></p>
+            <p class="f30 g6">手机号码：<span class="f32 g3">13766998866</span></p>
+        </aside>
+        <aside class=" bbe p0_24 bgwh mb20" onclick="javascript:window.location.href='my_creditcardadmin_informain.html','_self'">
+            <span class="lh100 f30 g6 w200 dib">个人信息</span>
+            <img src="images/right_left.png" alt="" class="h30 mt35 r">
+        </aside>
+        <aside class=" bbe p0_24 bgwh" onclick="javascript:window.location.href='my_creditcardadmin_othermain.html','_self'">
+            <span class="lh100 f30 g6 w200 dib">其他信息</span>
+            <img src="images/right_left.png" alt="" class="h30 mt35 r">
+        </aside>
+        <aside class="mt108 btn ml75" id="reject">
+            <p class="f36 wh tc">驳回</p>
+        </aside>
+        <aside class="mt108 btn ml110" id="pass">
+            <p class="f36 wh tc">通过</p>
+        </aside>
+    </main>
+    <!-- 遮罩 -->
+    <aside class="shadeall dn"></aside>
+    <!-- 遮罩结束 -->
+    <aside class="bgwh radius10 abs zx2 dn" id="pass_on">
+        <section class="tc">
+            <p class="f32 mb30">确定要通过用户申请</p>
+            <p class="f32 mb30">通过后将为用户下发此信用卡</p>
+            <hr class="mb30">
+            <div class="">
+                <a class="pct50 f36 g28D4D6 lh60 cancel">取消</a>
+                <a class="pct50 f36 g28D4D6 lh60">确定</a>
+            </div>
+        </section>
+    </aside>
+    <aside class="bgwh radius10 abs zx2 dn" id="reject_on">
+        <section class="tc">
+            <p class="f32 mb30">确定要驳回用户申请</p>
+            <p class="f32 mb30">驳回后用户无法使用此信用卡</p>
+            <hr class="mb30">
+            <div class="">
+                <a class="pct50 f36 g28D4D6 lh60 cancel">取消</a>
+                <a class="pct50 f36 g28D4D6 lh60">确定</a>
+            </div>
+        </section>
+    </aside>
+    </form>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$("#pass").click(function(){
+    $(".shadeall").show();
+    $("#pass_on").show();
+    document.documentElement.style.overflow='hidden';
+    document.body.style.overflow='hidden';
+})
+$("#reject").click(function(){
+    $("#reject_on").show();
+    $(".shadeall").show();
+    document.documentElement.style.overflow='hidden';
+    document.body.style.overflow='hidden';
+})
+$(".cancel").click(function(){
+    $(".dn").hide();
+    document.documentElement.style.overflow='auto';
+    document.body.style.overflow='auto';
+})
+
+</script>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<title>天使贷</title>
+</head>
+<body id="index_student" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <i class="header_l" onclick="javascript:history.back(-1); "><img src="images/back.png" alt="" class="h32 vtt"></i>
+        <span class="f34">学生贷</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt88">
+        <div class="bgwh"><img src="images/index/studentbanner.png" alt="" class="h380 w"></div>
+        <section class="p0_24 mb20 bgwh">
+            <p class="f32 tc pb25">关于学生贷</p>
+            <i class="bbc dib mb26"></i>
+            <p class="g6 indent2 f26 lh40 pb25">常用的大学生助学贷款一般有两类：国家助学贷款和生源地信用助学贷款。国家助学贷款是由政府主导、财政贴息，银行、教育行政部门与高校共同操作的专门帮助高校贫困家庭学生的银行贷款。</p>
+        </section>
+        <aside class=" ">
+            <section class="p36_24 bgwh bbe">
+                <img src="images/index/condition.png" alt="" class="h30 vm">
+                <span class="f32 vm ml50">申请条件</span>
+                <img src="images/right_bottom.png" alt="" class="h18 vm r">
+            </section>
+            <section class="p0_24 dn">
+                <p class="f26 lh60">1.<span class="f30">中国及外籍人士均可借款；</span></p>
+                <p class="f26 lh60">2.<span class="f30">必须本人办理；</span></p>
+                <p class="f26 lh60">3.<span class="f30">信用良好，具有完全民事行为能力。</span></p>
+            </section>
+            <section class="p36_24 bgwh bbe ">
+                <img src="images/index/Material-Science.png" alt="" class="h30 vm">
+                <span class="f32 vm ml50">所需材料</span>
+                <img src="images/right_bottom.png" alt="" class="h18 vm r">
+            </section>
+            <section class="p0_24 dn">
+                <p class="f26 lh60">1.<span class="f30">中国及外籍人士均可借款；</span></p>
+                <p class="f26 lh60">2.<span class="f30">必须本人办理；</span></p>
+                <p class="f26 lh60">3.<span class="f30">信用良好，具有完全民事行为能力。</span></p>
+            </section>
+            <section class="p36_24 bgwh bbe ">
+                <img src="images/index/Explain.png" alt="" class="h30 vm">
+                <span class="f32 vm ml50">还款说明</span>
+                <img src="images/right_bottom.png" alt="" class="h18 vm r">
+            </section>
+            <section class="p0_24 dn">
+                <p class="f26 lh60">1.<span class="f30">中国及外籍人士均可借款；</span></p>
+                <p class="f26 lh60">2.<span class="f30">必须本人办理；</span></p>
+                <p class="f26 lh60">3.<span class="f30">信用良好，具有完全民事行为能力。</span></p>
+            </section>
+            <section class="p36_24 bgwh bbe ">
+                <img src="images/index/trend.png" alt="" class="h30 vm">
+                <span class="f32 vm ml50">利率说明</span>
+                <img src="images/right_bottom.png" alt="" class="h18 vm r">
+            </section>
+            <section class="p0_24 dn">
+                <p class="f26 lh60">1.<span class="f30">中国及外籍人士均可借款；</span></p>
+                <p class="f26 lh60">2.<span class="f30">必须本人办理；</span></p>
+                <p class="f26 lh60">3.<span class="f30">信用良好，具有完全民事行为能力。</span></p>
+            </section>
+        </aside>
+    </main>
+    <footer class="footer_btn" onclick="javascript:window.location.href='index_form.html','_self'">
+        <p class="wh f36 tc">我要申请</p>
+    </footer>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+// 申请条件
+    var i=0;
+    $("aside .p36_24").click(function(){
+        i=$("aside .p36_24").index($(this));
+        if ($(this).find(".r").attr("src")==="images/right_bottom.png") {
+            $("aside .p0_24").eq(i).show();
+            $(this).find(".r").attr("src","images/right_top.png");
+        }else{
+            $("aside .p0_24").eq(i).hide();
+            $(this).find(".r").attr("src","images/right_bottom.png");
+        };
+    })
+</script>
+</html>

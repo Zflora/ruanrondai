@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/my.css" rel="stylesheet" type="text/css">
+<title>天使贷</title>
+</head>
+<body id="my_creditcardadmin" class="">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <i class="header_l" onclick="javascript:history.back(-1); "><img src="images/back.png" alt="" class="h32 vtt"></i>
+        <span class="f34">信用卡管理</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt108">
+        <aside class="radius20 ovh bd28d4d6">
+            <h1 class="lh60 tc f32 h1_on">申请信息</h1>
+            <h1 class="lh60 tc f32">发布信用卡</h1>
+            <h1 class="lh60 tc f32">已通过用户</h1>
+        </aside>
+        <aside class="mt20">
+            <section class="abs w">
+                <div class="bgwh p36_24 mb20" onclick="javascript:window.location.href='my_creditcardadmin_usermain.html','_self'">
+                    <div class="dib abs">
+                        <img src="images/my/head.png" alt="" class="round w110h110 mb20">
+                        <p class="f30 mb20">程暮雪</p>
+                        <p class="f24">CHENG MU XUE</p>
+                    </div>
+                    <div class="dib ml130">
+                        <span class="f32 mr24">中国工商银行大来信用卡</span>
+                        <p class="f24 g6 mt30">手机号码：13766998866</p>
+                        <p class="f24 g6 mt30">身份证号：411403198906231230</p>
+                        <p class="f24 g6 mt30">所在地区：上海市松江区</p>
+                    </div>
+                </div>
+            </section>
+            <section class="abs dn w bgwh">
+                <div class="auto w500h350 mb120 pb40" onclick="javascript:window.location.href='my_creditcardadmin_main.html','_self'">
+                    <img src="images/creditcard/pic_gongshang.png" alt="" class="w500h350 p40_0">
+                    <p class="f32 g28D4D6 tc">（中国工商银行大来信用卡）</p>
+                </div>                
+                <p class="f32 p0_24" onclick="javascript:window.location.href='my_creditcardadmin_add.html','_self'">+添加发布新的信用卡</p>
+                <hr class="ml24 mt20">
+            </section>
+            <section class="abs dn w">
+                <div class="bgwh p36_24 mb20" onclick="javascript:window.location.href='my_creditcardadmin_success.html','_self'">
+                    <div class="dib abs">
+                        <img src="images/my/head.png" alt="" class="round w110h110 mb20">
+                        <p class="f30 mb20">程暮雪</p>
+                        <p class="f24">CHENG MU XUE</p>
+                    </div>
+                    <div class="dib ml130">
+                        <span class="f32 mr24">中国工商银行大来信用卡</span>
+                        <p class="f24 g6 mt30">手机号码：13766998866</p>
+                        <p class="f24 g6 mt30">身份证号：411403198906231230</p>
+                        <p class="f24 g6 mt30">所在地区：上海市松江区</p>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </main>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+    var i=0;
+    $("h1").click(function(){
+        i=$("h1").index($(this));
+        $(this).addClass("h1_on").siblings().removeClass("h1_on");
+        $("section").eq(i).show().siblings().hide();
+    })
+</script>
+</html>

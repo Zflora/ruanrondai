@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<title>天使贷</title>
+</head>
+<body id="index_form_loan" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <i class="header_l" onclick="javascript:history.back(-1); "><img src="images/back.png" alt="" class="h32 vtt"></i>
+        <span class="f34">已审批贷款</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt88">
+        <aside class="bgwh ptb60lr77 mb20" align="center">
+            <img src="images/approval.png" alt="" class="h36 mr30">
+            <div class="dib vt tl">
+                <p class="f36 mb26">您的信息审核通过</p>
+                <p class="f30 g6">请进一步完善信息</p>
+            </div>
+        </aside>
+        <aside class="bgwh mb20">
+            <section class="bbe p0_24">
+                <p class="dib g6 f30 w170 lh80">本人姓名：</p>
+                <input type="text" class="w490 f26" placeholder="请输入您本人姓名">
+            </section>
+            <section class="bbe p0_24">
+                <p class="dib g6 f30 w170 lh80">银行卡号：</p>
+                <input type="tel" class="w490 f26" placeholder="请输入接受贷款银行卡号">
+            </section>
+        </aside>
+        <aside class="mb20 bgwh p40_24 tc">
+            <p class="f30 g6 mb35 tl">本人头像照片：</p>
+            <label for="up_img" class="dib" id="imgdiv"><img src="images/index/car_news.png" alt="" id="imgShow" class="h210"></label>
+            <input type="file" id="up_img" class="dn" />
+        </aside>
+        <aside class="mb20 bgwh p40_24 tc">
+            <p class="f30 g6 mb35 tl">身份证照片：</p>
+            <div class="dib ">
+                <label for="up_img_zheng" class="dib" id="imgdiv_zheng"><img src="images/index/car_news.png" alt="" id="imgShow_zheng" class="h210"></label>
+                <input type="file" id="up_img_zheng" class="dn" />
+            </div>
+            <div class="dib ml50">
+                <label for="up_img_fan" class="dib" id="imgdiv_fan"><img src="images/index/car_news.png" alt="" id="imgShow_fan" class="h210"></label>
+                <input type="file" id="up_img_fan" class="dn" />
+            </div>
+        </aside>
+        <aside class="bgwh mb20">
+            <section class="bbe p0_24">
+                <p class="dib g6 f30 lh80 w280">申请金额：</p>
+                <p class="f36 g28D4D6 dib">2000元</p>
+            </section>
+            <section class="bbe p0_24">
+                <p class="dib g6 f30 lh80 w280">平台手续费：</p>
+                <p class="f36 g28D4D6 dib">20</p>
+            </section>
+        </aside>
+    </main>
+    <footer class="footer_btn" onclick="javascript:window.location.href='index_pay.html','_self'">
+        <p class="wh f36 tc">提交并支付（2/2）</p>
+    </footer>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- 图片预览 -->
+<script type="text/javascript" src="js/uploadPreview.js"></script>
+<script type="text/javascript">
+$(function(){
+    // 图片预览
+    window.onload = function () { 
+            new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
+            new uploadPreview({ UpBtn: "up_img_zheng", DivShow: "imgdiv_zheng", ImgShow: "imgShow_zheng" });
+            new uploadPreview({ UpBtn: "up_img_fan", DivShow: "imgdiv_fan", ImgShow: "imgShow_fan" });
+        }
+})
+</script>
+</html>

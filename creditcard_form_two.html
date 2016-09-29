@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/creditcard.css" rel="stylesheet" type="text/css">
+<!-- 城市 -->
+<link rel="stylesheet" href="css/LArea.min.css">
+<title>天使贷</title>
+</head>
+<body id="creditcard_form_two" class="mb120">
+<form action="">  
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <i class="header_l" onclick="javascript:history.back(-1); "><img src="images/back.png" alt="" class="h32 vtt"></i>
+        <span class="f34">个人信息</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt108">        
+        <aside class="mb20 bgwh">
+            <section class="bbe p0_24 ">
+                <span class="lh100 f30 g6 w200 dib">电子邮箱：</span>
+                <input type="text" class="f26 vtt w490" placeholder="建议您可考虑网易、QQ或新浪邮箱">
+            </section>
+            <section class=" bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">身份证地址：</span>
+                <input type="text" class="f26 vtt w350" placeholder="请选择省/市" readonly="" id="demo1">
+                <img src="images/right_left.png" alt="" class="h30 mt35 r">
+            </section>
+            <section class=" bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">详细地址：</span>
+                <textarea type="text" class="f26 vtt h100 w490" placeholder="请与身份证地址保持一致"></textarea>
+            </section>
+            <section class="bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">国籍：</span>
+                <div class="dib">
+                    <input type="radio" class="radio_input radio radio_on vm" name="china" id="china1">
+                    <label for="china1" class="f32 vm ml10">中国</label>
+                </div>
+                <div class="dib ml24">
+                    <input type="radio" class="radio_input radio vm" name="china" id="china2">
+                    <label for="china2" class="f32 vm ml10">其他</label>
+                </div>
+            </section>
+            <section class="bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">婚姻状况：</span>
+                <div class="dib">
+                    <input type="radio" class="radio_input radio radio_on vm" name="married" id="married1">
+                    <label for="married1" class="f32 vm ml10">未婚</label>
+                </div>
+                <div class="dib ml24">
+                    <input type="radio" class="radio_input radio vm" name="married" id="married2">
+                    <label for="married2" class="f32 vm ml10">已婚</label>
+                </div>
+                <div class="dib ml24">
+                    <input type="radio" class="radio_input radio vm" name="married" id="married3">
+                    <label for="married3" class="f32 vm ml10">其他</label>
+                </div>
+            </section>
+            <section class=" bbe p0_24" id="school_text">
+                <span class="lh100 f30 g6 w200 dib">学历：</span>
+                <input type="text" class="f26 vtt" placeholder="请选择您的学历程度" readonly="" value="">
+                <img src="images/right_left.png" alt="" class="h30 mt35 r">
+            </section>            
+        </aside>
+        <aside class="mb20 bgwh">
+            <section class=" bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">住宅地址：</span>
+                <input type="text" class="f26 vtt w350" placeholder="请选择省/市" readonly="" id="demo2">
+                <img src="images/right_left.png" alt="" class="h30 mt35 r">
+            </section>
+            <section class=" bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">具体地址：</span>
+                <textarea type="text" class="f26 vtt h100 w490" placeholder="请详细填写，以保信函准确送达"></textarea>
+            </section>
+            <section class=" bbe p0_24" id="home_text">
+                <span class="lh100 f30 g6 w200 dib">住宅类型：</span>
+                <input type="text" class="f26 vtt" placeholder="请选择您的住宅类型" readonly="">
+                <img src="images/right_left.png" alt="" class="h30 mt35 r">
+            </section> 
+            <section class=" bbe p0_24" id="time_text">
+                <span class="lh100 f30 g6 w200 dib">居住年限：</span>
+                <input type="text" class="f26 vtt" placeholder="请选择您住宅的居住年限" readonly="">
+                <img src="images/right_left.png" alt="" class="h30 mt35 r">
+            </section>
+        </aside>
+        <aside class="mb20 bgwh">
+            <section class="bbe p0_24 ">
+                <span class="lh100 f30 g6 w200 dib">亲属姓名：</span>
+                <input type="text" class="f26 vtt w490" placeholder="请输入您一位亲属姓名">
+            </section>
+            <section class=" bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">亲属电话：</span>
+                <input type="tel" class="f26 vtt w490" placeholder="请输入您这位亲属的电话" maxlength="11">
+            </section>
+            <section class="bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">亲属关系：</span>
+                <div class="dib">
+                    <input type="radio" class="radio_input radio radio_on vm" name="kin" id="kin1">
+                    <label for="kin1" class="f32 vm ml10">父母</label>
+                </div>
+                <div class="dib ml24">
+                    <input type="radio" class="radio_input radio vm" name="kin" id="kin2">
+                    <label for="kin2" class="f32 vm ml10">配偶</label>
+                </div>
+                <div class="dib ml24">
+                    <input type="radio" class="radio_input radio vm" name="kin" id="kin3">
+                    <label for="kin3" class="f32 vm ml10">其他</label>
+                </div>
+            </section>           
+        </aside>
+        <aside class="mb20 bgwh">
+            <section class="bbe p0_24 ">
+                <span class="lh100 f30 g6 w200 dib">紧急联系人：</span>
+                <input type="text" class="f26 vtt w490" placeholder="请输入一位您的紧急联系人">
+            </section>
+            <section class=" bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">联系电话：</span>
+                <input type="tel" class="f26 vtt w490" placeholder="请输入这位联系人的电话" maxlength="11">
+            </section>
+            <section class="bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">与您的关系：</span>
+                <div class="dib">
+                    <input type="radio" class="radio_input radio radio_on vm" name="linkman" id="linkman1">
+                    <label class="f32 vm ml10" for="linkman1">朋友</label>
+                </div>
+                <div class="dib ml24">
+                    <input type="radio" class="radio_input radio vm" name="linkman" id="linkman2">
+                    <label class="f32 vm ml10" for="linkman2">同事</label>
+                </div>
+                <div class="dib ml24">
+                    <input type="radio" class="radio_input radio vm" name="linkman" id="linkman3">
+                    <label class="f32 vm ml10" for="linkman3">其他</label>
+                </div>
+            </section>           
+        </aside>
+        <aside class="mb20 bgwh" onclick="javascript:window.location.href='index_form_car.html','_self'">
+            <section class=" bbe p0_24">
+                <span class="lh100 f30 g6 w490 dib">汽车信息（选填）</span>
+                <img src="images/right_left.png" alt="" class="h30 mt35 r">
+            </section>            
+        </aside>
+        <aside class="mt108 btn auto" onclick="javascript:window.location.href='creditcard_form_three.html','_self'">
+            <p class="f36 wh tc">下一步（2/3）</p>
+        </aside>
+    </main>
+    <!-- 遮罩 -->
+    <aside class="shadeall dn"></aside>
+    <!-- 遮罩结束 -->
+    <!-- 学历 -->
+    <aside class="footer bgwh zx2 dn" id="school">
+        <section class="bg24BFD2 p0_24 header mb30">
+            <span class="f34">学历程度</span>
+            <p class="header_r f32 g28D4D6" id="schoolbtn">选择</p>
+        </section>
+        <ul class="p0_24">
+            <li class="mb50">
+                <input type="radio" class="radio_input radio radio_on vm" name="school" id="school1">
+                <label for="school1" class="f32 vm ml24">博士及以上</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="school" id="school2">
+                <label for="school2" class="f32 vm ml24">硕士</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="school" id="school3">
+                <label for="school3" class="f32 vm ml24">大学</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="school" id="school4">
+                <label for="school4" class="f32 vm ml24">大专</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="school" id="school5">
+                <label for="school5" class="f32 vm ml24">高中及以下</label>
+            </li>
+        </ul>
+    </aside>
+    <!-- 学历结束 -->
+    <!-- 住宅类型 -->
+    <aside class="footer bgwh zx2 dn" id="home">
+        <section class="bg24BFD2 p0_24 header mb30">
+            <span class="f34">住宅类型</span>
+            <p class="header_r f32 g28D4D6" id="homebtn">选择</p>
+        </section>
+        <ul class="p0_24">
+            <li class="mb50">
+                <input type="radio" class="radio_input radio radio_on vm" name="home" id="home1">
+                <label for="home1" class="f32 vm ml24">租用</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="home" id="home2">
+                <label for="home2" class="f32 vm ml24">与父母同住</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="home" id="home3">
+                <label for="home3" class="f32 vm ml24">单位宿舍</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="home" id="home4">
+                <label for="home4" class="f32 vm ml24">无按揭自置</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="home" id="home5">
+                <label for="home5" class="f32 vm ml24">有按揭自置</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="home" id="home6">
+                <label for="home6" class="f32 vm ml24">其他</label>
+            </li>
+        </ul>
+    </aside>
+    <!-- 住宅类型结束 -->
+    <!-- 居住年限 -->
+    <aside class="footer bgwh zx2 dn" id="time">
+        <section class="bg24BFD2 p0_24 header mb30">
+            <span class="f34">居住年限</span>
+            <p class="header_r f32 g28D4D6" id="timebtn">选择</p>
+        </section>
+        <ul class="p0_24">
+            <li class="mb50">
+                <input type="radio" class="radio_input radio radio_on vm" name="time" id="time1">
+                <label for="time1" class="f32 vm ml24">1年</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="time" id="time2">
+                <label for="time2" class="f32 vm ml24">2年</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="time" id="time3">
+                <label for="time3" class="f32 vm ml24">3年</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="time" id="time4">
+                <label for="time4" class="f32 vm ml24">4年</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="time" id="time5">
+                <label for="time5" class="f32 vm ml24">5年</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="time" id="time6">
+                <label for="time6" class="f32 vm ml24">5年以上</label>
+            </li>
+        </ul>
+    </aside>
+    <!-- 居住年限结束 -->
+    </form>
+</body>
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- 城市选择 -->
+<script src="js/LAreaData1.js"></script>
+<script src="js/LArea.min.js"></script>
+<script type="text/javascript">
+// 国籍
+$("input[name='china']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("div").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+// 婚姻状况
+$("input[name='kin']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("div").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+// 亲属
+$("input[name='married']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("div").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+// 紧急联系人
+$("input[name='linkman']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("div").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+// 学历
+$("#school_text").click(function(){    
+    $(".shadeall").show();
+    $("#school").show();
+    document.documentElement.style.overflow='hidden';
+    document.body.style.overflow='hidden';
+})
+$("input[name='school']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("li").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+$("#schoolbtn").click(function(){
+    $("#school_text input").val($("#school .radio_on").siblings().html());
+
+    $(".shadeall").hide();
+    $("#school").hide();
+    document.documentElement.style.overflow='auto';
+    document.body.style.overflow='auto';
+})
+// 住宅类型
+$("#home_text").click(function(){    
+    $(".shadeall").show();
+    $("#home").show();
+    document.documentElement.style.overflow='hidden';
+    document.body.style.overflow='hidden';
+})
+$("input[name='home']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("li").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+$("#homebtn").click(function(){
+    $("#home_text input").val($("#home .radio_on").siblings().html());
+
+    $(".shadeall").hide();
+    $("#home").hide();
+    document.documentElement.style.overflow='auto';
+    document.body.style.overflow='auto';
+})
+// 居住年限
+$("#time_text").click(function(){    
+    $(".shadeall").show();
+    $("#time").show();
+    document.documentElement.style.overflow='hidden';
+    document.body.style.overflow='hidden';
+})
+$("input[name='time']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("li").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+$("#timebtn").click(function(){
+    $("#time_text input").val($("#time .radio_on").siblings().html());
+
+    $(".shadeall").hide();
+    $("#time").hide();
+    document.documentElement.style.overflow='auto';
+    document.body.style.overflow='auto';
+})
+$(".shadeall").click(function(){
+    $(".dn").hide();
+    document.documentElement.style.overflow='auto';
+    document.body.style.overflow='auto';
+})
+// 身份证地址：
+    var area1 = new LArea();
+    area1.init({
+        'trigger': '#demo1', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+        'valueTo': '#value1', //选择完毕后id属性输出到该位置
+        'keys': {
+            id: 'id',
+            name: 'name'
+        }, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+        'type': 1, //数据源类型
+        'data': LAreaData //数据源
+    });
+    area1.value=[1,13,3];//控制初始位置，注意：该方法并不会影响到input的value
+// 住宅地址：
+    var area2 = new LArea();
+    area2.init({
+        'trigger': '#demo2', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+        'valueTo': '#value1', //选择完毕后id属性输出到该位置
+        'keys': {
+            id: 'id',
+            name: 'name'
+        }, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+        'type': 1, //数据源类型
+        'data': LAreaData //数据源
+    });
+    area2.value=[1,13,3];//控制初始位置，注意：该方法并不会影响到input的value
+</script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<title>天使贷</title>
+</head>
+<body id="index_loan_form" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <i class="header_l" onclick="javascript:history.back(-1); "><img src="images/back.png" alt="" class="h32 vtt"></i>
+        <span class="f34">已申请贷款</span>
+        <i class="header_r"><img src="images/more.png" alt="" class="h10"></i>
+        <aside class="shadow abs dn">
+            <img src="images/sanjiao.png" alt="" class="h14 abs">
+            <ul>
+                <li class="bbe" onclick="javascript:window.location.href='index.html','_self'">
+                    <img src="images/index/start.png" alt="" class="h30 mr24">
+                    <p class="f30 g6 dib lh80">返回首页</p>
+                </li>
+                <li class="bbe" onclick="javascript:window.location.href='index_form_alter.html','_self'">
+                    <img src="images/index/modify.png" alt="" class="h30 mr24">
+                    <p class="f30 g6 dib lh80">修改信息</p>
+                </li>
+                <li class="bbe" onclick="javascript:window.location.href='index_form_del.html','_self'">
+                    <img src="images/index/delete.png" alt="" class="h30 mr24">
+                    <p class="f30 g6 dib lh80">删除信息</p>
+                </li>
+            </ul>
+        </aside>
+    </header>
+    <!-- header_end -->
+    <main class="mt88">
+        <aside class="bgwh ptb60lr77 mb20" align="center">
+            <img src="images/apply.png" alt="" class="h36 mr30">
+            <div class="dib vt tl">
+                <p class="f36 mb26">您的贷款申请已提交</p>
+                <p class="f30 g6">银行正在审核您的信息</p>
+            </div>
+        </aside>
+        <aside class="bgwh p40_24 mb20">
+            <p class="f30 g6 mb40">贷款类型：<span class="f32 g3">学生贷</span></p>
+            <p class="f30 g6 mb40">申请金额：<span class="f32 g3">20000元</span></p>
+            <p class="f30 g6">申请时间：<span class="f32 g3">2016/06/12 12:26</span></p>
+        </aside>
+        <aside class="bgwh p40_24 mb20">
+            <p class="f30 g6 mb40">申请人姓名：<span class="f32 g3">程暮雪</span></p>
+            <p class="f30 g6 mb40">申请电话：<span class="f32 g3">13766998866</span></p>
+            <p class="f30 g6 ">申请身份证：<span class="f32 g3">411403198906231230</span></p>            
+        </aside>
+        <aside class="bgwh p40_24 mb20">
+            <p class="f30 g6 mb40">房产信息：<span class="f32 g3">180m2</span></p>
+            <p class="f30 g6 mb40">汽车信息：<span class="f32 g3">沪A 789W</span></p>
+            <p class="f30 g6">资质证信息：<span class="f32 g3">教师资格证</span></p>
+        </aside>
+        <aside class="p40_24">
+            <img src="images/prompt.png" alt="" class="h36 l">
+            <p class="f26 g9 ml50 " onclick="javascript:window.location.href='index_form_user.html','_self'">温馨提示：七个工作日内若无金融机构审批您的贷款，我们将自动关闭本条信息</p>
+        </aside>
+    </main>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+    $(".header_r").click(function(){
+        $(".shadow").toggle();
+    })
+</script>
+</html>

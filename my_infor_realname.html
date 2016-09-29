@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<title>天使贷</title>
+</head>
+<body id="my_infor_realname" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <i class="header_l" onclick="javascript:history.back(-1); "><img src="images/back.png" alt="" class="h32 vtt"></i>
+        <span class="f34">姓名</span>
+        <span class="header_r"><p class="f30 wh">保存</p></span>
+    </header>
+    <!-- header_end -->
+    <aside class="mt108 bgwh">
+        <div class="pl24 pt24 pb25">
+            <input class="f32 dib vm lh40 w560" placeholder="请输入姓名" type="text" required>
+            <img src="images/del.png" alt="" class="h30 vm r mr24 mt3">
+        </div>
+    </aside>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+    $(".mr24").click(function(){
+        $("input").val("");
+    })
+})
+</script>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<title>天使贷</title>
+</head>
+<body id="index" class="mb120 bgwh">
+    <!-- header -->
+    <header class="bg24BFD2">
+        <span class="f34">投资贷款</span>
+    </header>
+    <!-- header_end -->
+    <!-- banner -->
+    <aside class="main_visual mb20 mt88">
+        <div class="main_image">
+            <ul>                    
+                <li><span ><img src="images/index/banner.png" alt="" /></span></li>
+                <li><span ><img src="images/index/banner.png" alt="" /></span></li>
+                <li><span ><img src="images/index/banner.png" alt="" /></span></li>
+            </ul>
+            <a href="javascript:;" id="btn_prev"></a>
+            <a href="javascript:;" id="btn_next"></a>
+        </div>
+        <div class="flicking_con">
+            <div class="flicking_inner">
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
+    </aside>
+    <!-- banner_end -->
+    <nav>
+        <ul>
+            <li class="ptb60lr77 tc dib" onclick="javascript:window.location.href='index_student.html','_self'">
+                <img src="images/index/student.png" alt="" class="h60 mb20">
+                <p class="f32">学生贷</p>
+            </li>
+            <li class="ptb60lr77 tc dib" onclick="javascript:window.location.href='index_form_loan.html','_self'">
+                <img src="images/index/house.png" alt="" class="h60 mb20">
+                <p class="f32">房产贷</p>
+            </li>
+            <li class="ptb60lr77 tc dib" onclick="javascript:window.location.href='index_loan_unsuccess.html','_self'">
+                <img src="images/index/enterprise.png" alt="" class="h60 mb20">
+                <p class="f32">企业贷</p>
+            </li>
+            <li class="ptb60lr77 tc dib" onclick="javascript:window.location.href='index_loan_approved.html','_self'">
+                <img src="images/index/card.png" alt="" class="h60 mb20">
+                <p class="f32">证件贷</p>
+            </li>
+            <li class="ptb60lr77 tc dib" onclick="javascript:window.location.href='index_loan_success.html','_self'">
+                <img src="images/index/loop.png" alt="" class="h60 mb20">
+                <p class="f32">循环贷</p>
+            </li>
+            <li class="ptb60lr77 tc dib" onclick="javascript:window.location.href='index_loan_cardunsuccess.html','_self'">
+                <img src="images/index/Small_amount.png" alt="" class="h60 mb20">
+                <p class="f32">小额贷</p>
+            </li>
+            <li class="ptb60lr77 tc dib">
+                <img src="images/index/Entrepreneurship.png" alt="" class="h60 mb20">
+                <p class="f32">创业贷</p>
+            </li>
+            <li class="ptb60lr77 tc dib">
+                <img src="images/index/car.png" alt="" class="h60 mb20">
+                <p class="f32">汽车贷</p>
+            </li>
+            <li class="ptb60lr77 tc dib">
+                <img src="images/index/bank.png" alt="" class="h60 mb20">
+                <p class="f32">银行贷</p>
+            </li>
+        </ul>
+    </nav>
+    <!-- footer -->
+    <footer>
+        <ul>
+            <li onclick="javascript:window.location.href='index.html','_self'">
+                <div class="index_on"></div>
+                <p class="f24 g28D4D6">贷款</p>
+            </li>
+            <li onclick="javascript:window.location.href='creditcard.html','_self'">
+                <div class="tesk"></div>
+                <p class="f24">信用卡</p>
+            </li>
+            <li onclick="javascript:window.location.href='my.html','_self'">
+                <div class="my"></div>
+                <p class="f24">我的</p>
+            </li>
+        </ul>
+    </footer>
+    <!-- footer_end -->
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- banner -->
+<script type="text/javascript" src="js/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript">
+$(function(){
+    //轮播开始
+    $dragBln = false;
+    $(".main_image").touchSlider({
+        flexible : true,
+        speed : 200,
+        btn_prev : $("#btn_prev"),
+        btn_next : $("#btn_next"),
+        paging : $(".flicking_con a"),
+        counter : function (e) {
+            $(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+        }
+    });
+    $(".main_image").bind("mousedown", function() {
+        $dragBln = false;
+    })
+    $(".main_image").bind("dragstart", function() {
+        $dragBln = true;
+    })
+    $(".main_image a").click(function() {
+        if($dragBln) {
+            return false;
+        }
+    })
+    timer = setInterval(function() { $("#btn_next").click();}, 3000);
+    $(".main_visual").hover(function() {
+        clearInterval(timer);
+    }, function() {
+        timer = setInterval(function() { $("#btn_next").click();}, 3000);
+    })
+    $(".main_image").bind("touchstart", function() {
+        clearInterval(timer);
+    }).bind("touchend", function() {
+        timer = setInterval(function() { $("#btn_next").click();}, 3000);
+    })
+    //轮播结束
+})
+</script>
+</html>

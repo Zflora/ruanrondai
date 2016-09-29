@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/creditcard.css" rel="stylesheet" type="text/css">
+<!-- 城市 -->
+<link rel="stylesheet" href="css/LArea.min.css">
+<title>天使贷</title>
+</head>
+<body id="creditcard_form_two" class="mb120">
+<form action="">  
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <i class="header_l" onclick="javascript:history.back(-1); "><img src="images/back.png" alt="" class="h32 vtt"></i>
+        <span class="f34">基本信息</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt108">        
+        <aside class="mb20 bgwh">
+            <section class="bbe p0_24 ">
+                <span class="lh100 f30 g6 w200 dib">单位名称：</span>
+                <input type="text" class="f26 vtt w490" placeholder="请输入您工作的单位名称">
+            </section>
+            <section class=" bbe p0_24" id="number_text">
+                <span class="lh100 f30 g6 w200 dib">员工人数：</span>
+                <input type="text" class="f26 vtt w350" placeholder="请选择您工作单位员工人数" readonly="">
+                <img src="images/right_left.png" alt="" class="h30 mt35 r">
+            </section>
+            <section class=" bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">单位地址：</span>
+                <input type="text" class="f26 vtt w350" placeholder="请选择省/市" readonly="" id="demo1">
+                <img src="images/right_left.png" alt="" class="h30 mt35 r">
+            </section>
+            <section class=" bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">详细地址：</span>
+                <textarea type="text" class="f26 vtt h100 w490" placeholder="请与身份证地址保持一致"></textarea>
+            </section>
+            <section class=" bbe p0_24" id="character_text">
+                <span class="lh100 f30 g6 w200 dib">单位性质：</span>
+                <input type="text" class="f26 vtt w350" placeholder="请选择您工作单位的性质" readonly="">
+                <img src="images/right_left.png" alt="" class="h30 mt35 r">
+            </section>
+            <section class="bbe p0_24 ">
+                <span class="lh100 f30 g6 w200 dib">任职部门：</span>
+                <input type="text" class="f26 vtt w490" placeholder="请输入您任职部门">
+            </section>
+            <section class="bbe p0_24 ">
+                <span class="lh100 f30 g6 w200 dib">职位：</span>
+                <input type="text" class="f26 vtt w490" placeholder="请选择您的职位">
+            </section>
+            <section class=" bbe p0_24" id="position_text">
+                <span class="lh100 f30 g6 w200 dib">职位级别：</span>
+                <input type="text" class="f26 vtt w350" placeholder="请选择您的职位级别" readonly="">
+                <img src="images/right_left.png" alt="" class="h30 mt35 r">
+            </section>
+            <section class=" bbe p0_24" id="money_text">
+                <span class="lh100 f30 g6 w200 dib">年薪：</span>
+                <input type="text" class="f26 vtt w350" placeholder="请选择您的年薪" readonly="">
+                <img src="images/right_left.png" alt="" class="h30 mt35 r">
+            </section>
+            <section class=" bbe p0_24" id="year_text">
+                <span class="lh100 f30 g6 w200 dib">任职年数：</span>
+                <input type="text" class="f26 vtt w350" placeholder="请选择您工作任职的年数" readonly="">
+                <img src="images/right_left.png" alt="" class="h30 mt35 r">
+            </section>
+            <section class="bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">办理社保：</span>
+                <div class="dib">
+                    <input type="radio" class="radio_input radio radio_on vm" name="social">
+                    <span class="f32 vm ml10">是</span>
+                </div>
+                <div class="dib ml24">
+                    <input type="radio" class="radio_input radio vm" name="social">
+                    <span class="f32 vm ml10">否</span>
+                </div>
+            </section>
+            <section class="bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">职称：</span>
+                <div class="dib">
+                    <input type="radio" class="radio_input radio radio_on vm" id="title1" name="title">
+                    <label for="title1" class="f32 vm ml10">有</label>
+                </div>
+                <div class="dib ml24">
+                    <input type="radio" class="radio_input radio vm" id="title2" name="title">
+                    <label for="title2" class="f32 vm ml10">无</label>
+                </div>
+            </section>
+        </aside>
+        <aside class="mb20 bgwh">
+            <section class="bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">卡片邮寄：</span>
+                <div class="dib">
+                    <input type="radio" class="radio_input radio radio_on vm" name="card" id="card1">
+                    <label for="card1" class="f32 vm ml10">住宅</label>
+                </div>
+                <div class="dib ml24">
+                    <input type="radio" class="radio_input radio vm" name="card" id="card2">
+                    <label for="card2" class="f32 vm ml10">单位</label>
+                </div>
+            </section>  
+            <section class="bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">账单类型：</span>
+                <div class="dib">
+                    <input type="radio" class="radio_input radio radio_on vm" name="billlist" id="billlist">
+                    <label class="f32 vm ml10" for="billlist">电子账单</label>
+                </div>
+            </section>   
+            <section class="bbe p0_24">
+                <span class="lh100 f30 g6 w200 dib">账单邮寄：</span>
+                <div class="dib">
+                    <input type="radio" class="radio_input radio radio_on vm" name="bill" id="bill1">
+                    <label class="f32 vm ml10" for="bill1">住宅</label>
+                </div>
+                <div class="dib ml24">
+                    <input type="radio" class="radio_input radio vm" name="bill" id="bill2">
+                    <label class="f32 vm ml10" for="bill2">单位</label>
+                </div>
+            </section>        
+        </aside>
+        <aside class="mt108 btn auto" onclick="javascript:window.location.href='creditcard_loan_form.html','_self'">
+            <p class="f36 wh tc">提交（3/3)</p>
+        </aside>
+    </main>
+    <!-- 遮罩 -->
+    <aside class="shadeall dn"></aside>
+    <!-- 遮罩结束 -->
+    <!-- 单位性质 -->
+    <aside class="footer bgwh zx2 dn" id="character">
+        <section class="bg24BFD2 p0_24 header mb30">
+            <span class="f34">单位性质</span>
+            <p class="header_r f32 g28D4D6" id="characterbtn">选择</p>
+        </section>
+        <ul class="p0_24">
+            <li class="mb50">
+                <input type="radio" class="radio_input radio radio_on vm" id="character1" name="character">
+                <label class="f32 vm ml24" for="character1">国有</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="character" id="character2">
+                <label for="character2" class="f32 vm ml24">集体</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="character" id="character3">
+                <label for="character3" class="f32 vm ml24">国有控股</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="character" id="character4">
+                <label for="character4" class="f32 vm ml24">三资</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="character" id="character5">
+                <label for="character5" class="f32 vm ml24">经营</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="character" id="character6">
+                <label for="character6" class="f32 vm ml24">股份制</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="character" id="character7">
+                <label for="character7" class="f32 vm ml24">民营</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="character" id="character8">
+                <label for="character8" class="f32 vm ml24">其他</label>
+            </li>
+        </ul>
+    </aside>
+    <!-- 单位性质结束 -->
+    <!-- 年薪 -->
+    <aside class="footer bgwh zx2 dn" id="money">
+        <section class="bg24BFD2 p0_24 header mb30">
+            <span class="f34">年薪</span>
+            <p class="header_r f32 g28D4D6" id="moneybtn">选择</p>
+        </section>
+        <ul class="p0_24">
+            <li class="mb50">
+                <input type="radio" class="radio_input radio radio_on vm" id="money1" name="money">
+                <label class="f32 vm ml24" for="money1">20000元/年以下</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="money" id="money2">
+                <label for="money2" class="f32 vm ml24">20000-50000元/年</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="money" id="money3">
+                <label for="money3" class="f32 vm ml24">50001-100000元/年</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="money" id="money4">
+                <label for="money4" class="f32 vm ml24">100001-200000元/年</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="money" id="money5">
+                <label for="money5" class="f32 vm ml24">200000元/年以上</label>
+            </li>
+        </ul>
+    </aside>
+    <!-- 年薪结束 -->
+    <!-- 任职年数 -->
+    <aside class="footer bgwh zx2 dn" id="year">
+        <section class="bg24BFD2 p0_24 header mb30">
+            <span class="f34">任职年数</span>
+            <p class="header_r f32 g28D4D6" id="yearbtn">选择</p>
+        </section>
+        <ul class="p0_24">
+            <li class="mb50">
+                <input type="radio" class="radio_input radio radio_on vm" id="year1" name="year">
+                <label class="f32 vm ml24" for="year1">1年</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="year" id="year2">
+                <label for="year2" class="f32 vm ml24">2年</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="year" id="year3">
+                <label for="year3" class="f32 vm ml24">3年</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="year" id="year4">
+                <label for="year4" class="f32 vm ml24">4年</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="year" id="year5">
+                <label for="year5" class="f32 vm ml24">5年</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="year" id="year6">
+                <label for="year6" class="f32 vm ml24">5年以上</label>
+            </li>
+        </ul>
+    </aside>
+    <!-- 任职年数结束 -->
+    <!-- 单位人数 -->
+    <aside class="footer bgwh zx2 dn" id="number">
+        <section class="bg24BFD2 p0_24 header mb30">
+            <span class="f34">单位人数</span>
+            <p class="header_r f32 g28D4D6" id="numberbtn">选择</p>
+        </section>
+        <ul class="p0_24">
+            <li class="mb50">
+                <input type="radio" class="radio_input radio radio_on vm" id="number1" name="number">
+                <label class="f32 vm ml24" for="number1">20人以下</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="number" id="number2">
+                <label for="number2" class="f32 vm ml24">20-99人</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="number" id="number3">
+                <label for="number3" class="f32 vm ml24">100-499人</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="number" id="number4">
+                <label for="number4" class="f32 vm ml24">500-999人</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="number" id="number5">
+                <label for="number5" class="f32 vm ml24">1000-9999人</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="number" id="number6">
+                <label for="number6" class="f32 vm ml24">10000人以上</label>
+            </li>
+        </ul>
+    </aside>
+    <!-- 单位人数结束 -->
+    <!-- 职位级别 -->
+    <aside class="footer bgwh zx2 dn" id="position">
+        <section class="bg24BFD2 p0_24 header mb30">
+            <span class="f34">职位级别</span>
+            <p class="header_r f32 g28D4D6" id="positionbtn">选择</p>
+        </section>
+        <ul class="p0_24">
+            <li class="mb50">
+                <input type="radio" class="radio_input radio radio_on vm" id="position1" name="position">
+                <label class="f32 vm ml24" for="position1">总经理及以上</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="position" id="position2">
+                <label for="position2" class="f32 vm ml24">科级及部门经理</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="position" id="position3">
+                <label for="position3" class="f32 vm ml24">职员</label>
+            </li>
+            <li class="mb50">
+                <input type="radio" class="radio_input radio vm" name="position" id="position4">
+                <label for="position4" class="f32 vm ml24">其他</label>
+            </li>
+        </ul>
+    </aside>
+    <!-- 职位级别结束 -->
+    </form>
+</body>
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- 城市选择 -->
+<script src="js/LAreaData1.js"></script>
+<script src="js/LArea.min.js"></script>
+<script type="text/javascript">
+// 社保
+$("input[name='social']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("div").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+// 职称
+$("input[name='title']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("div").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+// 卡片邮寄
+$("input[name='card']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("div").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+// 账单邮寄
+$("input[name='bill']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("div").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+// 账单类型
+$("input[name='billlist']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on"); 
+        } 
+})
+// 单位性质
+$("#character_text").click(function(){    
+    $(".shadeall").show();
+    $("#character").show();
+    document.documentElement.style.overflow='hidden';
+    document.body.style.overflow='hidden';
+})
+$("input[name='character']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("li").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+$("#characterbtn").click(function(){
+    $("#character_text input").val($("#character .radio_on").siblings().html());
+    $(".dn").hide()
+    document.documentElement.style.overflow='auto';
+    document.body.style.overflow='auto';
+})
+// 职位级别
+$("#position_text").click(function(){    
+    $(".shadeall").show();
+    $("#position").show();
+    document.documentElement.style.overflow='hidden';
+    document.body.style.overflow='hidden';
+})
+$("input[name='position']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("li").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+$("#positionbtn").click(function(){
+    $("#position_text input").val($("#position .radio_on").siblings().html());
+    $(".dn").hide()
+    document.documentElement.style.overflow='auto';
+    document.body.style.overflow='auto';
+})
+// 单位人数
+$("#number_text").click(function(){    
+    $(".shadeall").show();
+    $("#number").show();
+    document.documentElement.style.overflow='hidden';
+    document.body.style.overflow='hidden';
+})
+$("input[name='number']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("li").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+$("#numberbtn").click(function(){
+    $("#number_text input").val($("#number .radio_on").siblings().html());
+    $(".dn").hide()
+    document.documentElement.style.overflow='auto';
+    document.body.style.overflow='auto';
+})
+// 任职年数
+$("#year_text").click(function(){    
+    $(".shadeall").show();
+    $("#year").show();
+    document.documentElement.style.overflow='hidden';
+    document.body.style.overflow='hidden';
+})
+$("input[name='year']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("li").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+$("#yearbtn").click(function(){
+    $("#year_text input").val($("#year .radio_on").siblings().html());
+    $(".dn").hide()
+    document.documentElement.style.overflow='auto';
+    document.body.style.overflow='auto';
+})
+// 年薪
+$("#money_text").click(function(){    
+    $(".shadeall").show();
+    $("#money").show();
+    document.documentElement.style.overflow='hidden';
+    document.body.style.overflow='hidden';
+})
+$("input[name='money']").click(function(){ 
+    if($(this).hasClass("radio_on")){   
+            $(this).removeClass("radio_on"); 
+        }else{ 
+            $(this).addClass("radio_on").parents("li").siblings().find("input").removeClass("radio_on"); 
+        } 
+})
+$("#moneybtn").click(function(){
+    $("#money_text input").val($("#money .radio_on").siblings().html());
+    $(".dn").hide()
+    document.documentElement.style.overflow='auto';
+    document.body.style.overflow='auto';
+})
+
+$(".shadeall").click(function(){
+    $(".dn").hide();
+    document.documentElement.style.overflow='auto';
+    document.body.style.overflow='auto';
+})
+// 身份证地址：
+    var area1 = new LArea();
+    area1.init({
+        'trigger': '#demo1', //触发选择控件的文本框，同时选择完毕后name属性输出到该位置
+        'valueTo': '#value1', //选择完毕后id属性输出到该位置
+        'keys': {
+            id: 'id',
+            name: 'name'
+        }, //绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
+        'type': 1, //数据源类型
+        'data': LAreaData //数据源
+    });
+    area1.value=[1,13,3];//控制初始位置，注意：该方法并不会影响到input的value
+</script>
+</html>

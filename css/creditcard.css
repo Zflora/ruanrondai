@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*creditcard_main*/
+#creditcard_main .footer li{margin: 0 0.52rem;text-align: center;}
+#creditcard_main .footer li:first-child{margin: 0 0 0 0.6rem!important;}
+#creditcard_main .footer li:last-child{margin: 0 0.6rem 0 0!important;}
+/*creditcard_form*/
+#creditcard_form_one main aside section a,#creditcard_form main aside section a{width: 1.85rem;border:1px solid #28D4D6;position: absolute;right: 0.24rem;margin-top: 0.18rem}
+/*creditcard_form_two*/
+#creditcard_form_two .radio{width: 0.33rem;height: 0.33rem;}
+#creditcard_form_two .radio_input{background: url(../images/radio.png) no-repeat;background-size: 100% 100%;}
+#creditcard_form_two .radio_on{background: url(../images/radio_on.png) no-repeat;background-size: 100% 100%;}
+#creditcard_form_two .footer .header{text-align: center;line-height: 0.6rem;padding-top: 0.2rem;}
+#creditcard_form_two .footer .header_r{position: absolute;right: 0.24rem;display: inline-block;}

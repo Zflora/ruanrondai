@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/my.css" rel="stylesheet" type="text/css">
+<title>天使贷</title>
+</head>
+<body id="registered" class="bgwh">
+<form action="enter.html">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <i class="header_l" onclick="javascript:history.back(-1); "><img src="images/back.png" alt="" class="h32 vtt"></i>
+        <span class="f34">注册</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt88">
+        <input type="password" class="f30 mt60" placeholder="请输入您设置的密码" maxlength="11" required>
+        <input type="password" class="f30 mt60 mb40" placeholder="请再次输入您设置的密码" required>
+        <a class="bg28CAD6 wh f36 tc lh80">确认并登录</a>
+    </main>
+</form>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+var pass1=$("input").eq(0).val();
+var pass2=$("input").eq(1).val();
+$("a").click(function(){
+    if (pass1===pass2) {
+        window.location.href='enter.html'
+    };
+})
+
+</script>
+</html>

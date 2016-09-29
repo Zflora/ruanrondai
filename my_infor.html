@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="email=no"/>
+<meta charset="UTF-8">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/header.css" rel="stylesheet" type="text/css">
+<link href="css/my.css" rel="stylesheet" type="text/css">
+<title>天使贷</title>
+</head>
+<body id="my_infor" class="mb120">
+    <!-- header -->
+    <header class="bg24BFD2 p0_24">
+        <i class="header_l" onclick="javascript:history.back(-1); "><img src="images/back.png" alt="" class="h32 vtt"></i>
+        <span class="f34">个人信息</span>
+    </header>
+    <!-- header_end -->
+    <main class="mt108 bgwh">
+        <ul>
+            <li class="pl24">
+                <label for="up_img" class="dib w pt24 pb25">
+                    <span class="f32 vm lh100 dib">头像</span>                    
+                    <div class="dib r mr24 vm">
+                        <label for="up_img" class="dib vm" id="imgdiv"><img src="images/my/head.png" id="imgShow" alt="" class="w110h110 round vm"></label>
+                        <i class="dib ml24"><img src="images/right_left.png" class="h30 vm" alt="" class=""></i>
+                    </div>
+                    <input type="file" id="up_img" class="dn" />
+                </label>                
+                <hr class="mt24">
+            </li>
+            <li onclick="javascript:window.location.href='my_infor_name.html','_self'" class="pl24">
+                <div class="dib">
+                    <span class="f32 vm lh100">昵称</span>
+                </div>
+                <div class="dib r mr24">
+                    <span class="f30 g9 vm lh100">郝宇飞</span>
+                    <img src="images/right_left.png" alt="" class="h30 vm ml24">
+                </div>
+                <hr>
+            </li>
+            <li onclick="javascript:window.location.href='my_infor_realname.html','_self'" class="pl24">
+                <div class="dib">
+                    <span class="f32 vm lh100">姓名</span>
+                </div>
+                <div class="dib r mr24">
+                    <span class="f30 g9 vm lh100">郝宇飞</span>
+                    <img src="images/right_left.png" alt="" class="h30 vm ml24">
+                </div>
+                <hr>
+            </li>
+            <li onclick="javascript:window.location.href='my_infor_sax.html','_self'" class="pl24">
+                <div class="dib">
+                    <span class="f32 vm lh100">性别</span>
+                </div>
+                <div class="dib r mr24">
+                    <span class="f30 g9 vm lh100">男</span>
+                    <img src="images/right_left.png" alt="" class="h30 vm ml24">
+                </div>
+                <hr>
+            </li>
+            <li onclick="javascript:window.location.href='my_infor_id.html','_self'" class="pl24">
+                <div class="dib">
+                    <span class="f32 vm lh100">身份证</span>
+                </div>
+                <div class="dib r mr24">
+                    <span class="f30 g9 vm lh100">654345199006231230</span>
+                    <img src="images/right_left.png" alt="" class="h30 vm ml24">
+                </div>
+                <hr>
+            </li>
+            <li onclick="javascript:window.location.href='my_infor_tel.html','_self'" class="pl24">
+                <div class="dib">
+                    <span class="f32 vm lh100">手机号</span>
+                </div>
+                <div class="dib r mr24">
+                    <span class="f30 g9 vm lh100">13766998866</span>
+                    <img src="images/right_left.png" alt="" class="h30 vm ml24">
+                </div>
+            </li>
+        </ul>        
+    </main>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- 图片预览 -->
+<script type="text/javascript" src="js/uploadPreview.js"></script>
+<script type="text/javascript">
+$(function(){
+    // 图片预览
+    window.onload = function () { 
+            new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
+        }
+})
+</script>
+</html>
