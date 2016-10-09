@@ -194,6 +194,7 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .vtb{vertical-align:text-bottom;}
 .vb{vertical-align:bottom;}
 .vt{vertical-align:top;}
+.vt-2{vertical-align: -0.02rem}
 /* float */
 .l{float:left;}
 .r{float:right;}

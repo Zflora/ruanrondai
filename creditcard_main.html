@@ -18,7 +18,6 @@
         <span class="f34">信用卡详情</span>
         <i class="header_r">
             <img src="images/college.png" alt="" class="h32 mr24 vtt">
-            <img src="images/share.png" alt="" class="h32 vtt" id="share">
         </i>
     </header>
     <!-- header_end -->
@@ -42,57 +41,7 @@
     <footer class="footer_btn" onclick="javascript:window.location.href='creditcard_form_one.html','_self'">
         <p class="wh f36 tc">我要申请</p>
     </footer>
-    <!-- 遮罩 -->
-    <aside class="shadeall dn"></aside>
-    <!-- 遮罩结束 -->
-    <!-- 分享 -->
-    <aside class="footer bgwh zx2 dn">
-        <p class="f32 tc mb50 pt30">分享到</p>
-        <ul class="mb60">
-            <li class="dib pt20">
-                <img src="images/weixin.png" alt="" class="h100 mb40">
-                <p class="f30 g3">微信</p>
-            </li>
-            <li class="dib pt20">
-                <img src="images/weixin1.png" alt="" class="h100 mb40">
-                <p class="f30 g3">朋友圈</p>
-            </li>
-            <li class="dib pt20">
-                <img src="images/qq.png" alt="" class="h100 mb40">
-                <p class="f30">QQ</p>
-            </li>
-            <li class="dib pt20">
-                <img src="images/zone.png" alt="" class="h100 mb40">
-                <p class="f30">空间</p>
-            </li>
-        </ul>
-        <div class="btn auto mb26">
-            <p class="f36 wh tc">取消</p>
-        </div>
-    </aside>
-    <!-- 分享结束 -->
 </body>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript">
-// share
-    $("#share").click(function(){
-        $(".shadeall").show();
-        $(".footer").show();
-        document.documentElement.style.overflow='hidden';
-        document.body.style.overflow='hidden';
-    })
-    $(".shadeall").click(function(){
-        $(".shadeall").hide();
-        $(".footer").hide();
-        document.documentElement.style.overflow='auto';
-        document.body.style.overflow='auto';
-    })
-    $(".btn").click(function(){
-        $(".shadeall").hide();
-        $(".footer").hide();
-        document.documentElement.style.overflow='auto';
-        document.body.style.overflow='auto';
-    })
-</script>
 </html>
