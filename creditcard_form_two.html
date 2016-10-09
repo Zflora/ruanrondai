@@ -11,7 +11,7 @@
 <link href="css/creditcard.css" rel="stylesheet" type="text/css">
 <!-- 城市 -->
 <link rel="stylesheet" href="css/LArea.min.css">
-<title>天使贷</title>
+<title>软融贷</title>
 </head>
 <body id="creditcard_form_two" class="mb120">
 <form action="">  
@@ -25,16 +25,16 @@
         <aside class="mb20 bgwh">
             <section class="bbe p0_24 ">
                 <span class="lh100 f30 g6 w200 dib">电子邮箱：</span>
-                <input type="text" class="f26 vtt w490" placeholder="建议您可考虑网易、QQ或新浪邮箱">
+                <input type="text" class="f26 w490" placeholder="建议您可考虑网易、QQ或新浪邮箱">
             </section>
             <section class=" bbe p0_24">
                 <span class="lh100 f30 g6 w200 dib">身份证地址：</span>
-                <input type="text" class="f26 vtt w350" placeholder="请选择省/市" readonly="" id="demo1">
+                <input type="text" class="f26 w350" placeholder="请选择省/市" readonly="" id="demo1">
                 <img src="images/right_left.png" alt="" class="h30 mt35 r">
             </section>
             <section class=" bbe p0_24">
                 <span class="lh100 f30 g6 w200 dib">详细地址：</span>
-                <textarea type="text" class="f26 vtt h100 w490" placeholder="请与身份证地址保持一致"></textarea>
+                <textarea type="text" class="f26 h100 w490 vtt" placeholder="请与身份证地址保持一致"></textarea>
             </section>
             <section class="bbe p0_24">
                 <span class="lh100 f30 g6 w200 dib">国籍：</span>
@@ -64,39 +64,39 @@
             </section>
             <section class=" bbe p0_24" id="school_text">
                 <span class="lh100 f30 g6 w200 dib">学历：</span>
-                <input type="text" class="f26 vtt" placeholder="请选择您的学历程度" readonly="" value="">
+                <input type="text" class="f26" placeholder="请选择您的学历程度" readonly="" value="">
                 <img src="images/right_left.png" alt="" class="h30 mt35 r">
             </section>            
         </aside>
         <aside class="mb20 bgwh">
             <section class=" bbe p0_24">
                 <span class="lh100 f30 g6 w200 dib">住宅地址：</span>
-                <input type="text" class="f26 vtt w350" placeholder="请选择省/市" readonly="" id="demo2">
+                <input type="text" class="f26 w350" placeholder="请选择省/市" readonly="" id="demo2">
                 <img src="images/right_left.png" alt="" class="h30 mt35 r">
             </section>
             <section class=" bbe p0_24">
                 <span class="lh100 f30 g6 w200 dib">具体地址：</span>
-                <textarea type="text" class="f26 vtt h100 w490" placeholder="请详细填写，以保信函准确送达"></textarea>
+                <textarea type="text" class="f26 h100 w490 vtt" placeholder="请详细填写，以保信函准确送达"></textarea>
             </section>
             <section class=" bbe p0_24" id="home_text">
                 <span class="lh100 f30 g6 w200 dib">住宅类型：</span>
-                <input type="text" class="f26 vtt" placeholder="请选择您的住宅类型" readonly="">
+                <input type="text" class="f26" placeholder="请选择您的住宅类型" readonly="">
                 <img src="images/right_left.png" alt="" class="h30 mt35 r">
             </section> 
             <section class=" bbe p0_24" id="time_text">
                 <span class="lh100 f30 g6 w200 dib">居住年限：</span>
-                <input type="text" class="f26 vtt" placeholder="请选择您住宅的居住年限" readonly="">
+                <input type="text" class="f26" placeholder="请选择您住宅的居住年限" readonly="">
                 <img src="images/right_left.png" alt="" class="h30 mt35 r">
             </section>
         </aside>
         <aside class="mb20 bgwh">
             <section class="bbe p0_24 ">
                 <span class="lh100 f30 g6 w200 dib">亲属姓名：</span>
-                <input type="text" class="f26 vtt w490" placeholder="请输入您一位亲属姓名">
+                <input type="text" class="f26 w490" placeholder="请输入您一位亲属姓名">
             </section>
             <section class=" bbe p0_24">
                 <span class="lh100 f30 g6 w200 dib">亲属电话：</span>
-                <input type="tel" class="f26 vtt w490" placeholder="请输入您这位亲属的电话" maxlength="11">
+                <input type="tel" class="f26 w490" placeholder="请输入您这位亲属的电话" maxlength="11">
             </section>
             <section class="bbe p0_24">
                 <span class="lh100 f30 g6 w200 dib">亲属关系：</span>
@@ -117,11 +117,11 @@
         <aside class="mb20 bgwh">
             <section class="bbe p0_24 ">
                 <span class="lh100 f30 g6 w200 dib">紧急联系人：</span>
-                <input type="text" class="f26 vtt w490" placeholder="请输入一位您的紧急联系人">
+                <input type="text" class="f26 w490" placeholder="请输入一位您的紧急联系人">
             </section>
             <section class=" bbe p0_24">
                 <span class="lh100 f30 g6 w200 dib">联系电话：</span>
-                <input type="tel" class="f26 vtt w490" placeholder="请输入这位联系人的电话" maxlength="11">
+                <input type="tel" class="f26 w490" placeholder="请输入这位联系人的电话" maxlength="11">
             </section>
             <section class="bbe p0_24">
                 <span class="lh100 f30 g6 w200 dib">与您的关系：</span>
@@ -387,5 +387,31 @@ $(".shadeall").click(function(){
         'data': LAreaData //数据源
     });
     area2.value=[1,13,3];//控制初始位置，注意：该方法并不会影响到input的value
+
+
+    var input=document.getElementsByTagName("input");
+    var textarea=document.getElementsByTagName("textarea");
+    $("input").change(function(){
+        for(var i=0;i<input.length;i++){
+            if ($("input").eq(i).val()) {
+                $("input").eq(i).css("font-size","0.3rem");
+                console.log(1);
+            }else{
+                $("input").eq(i).css("font-size","0.26rem");
+                console.log(2);
+            }
+        }
+    })
+    $("textarea").change(function(){
+        for(var y=0;y<textarea.length;y++){
+            if ($("textarea").eq(y).val()) {
+                $("textarea").eq(y).css("font-size","0.3rem");
+                console.log(3);
+            }else{
+                $("textarea").eq(y).css("font-size","0.26rem");
+                console.log(4);
+            }
+        }
+    })
 </script>
 </html>

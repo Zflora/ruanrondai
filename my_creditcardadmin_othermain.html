@@ -9,7 +9,7 @@
 <link href="css/base.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/my.css" rel="stylesheet" type="text/css">
-<title>天使贷</title>
+<title>软融贷</title>
 </head>
 <body id="my_creditcardadmin_othermain" class="mb120">
 <form action="">  
@@ -121,46 +121,4 @@
 </body>
 <script src="js/jquery.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript">
-// 社保
-$("input[name='social']").click(function(){ 
-    if($(this).hasClass("radio_on")){   
-            $(this).removeClass("radio_on"); 
-        }else{ 
-            $(this).addClass("radio_on").parents("div").siblings().find("input").removeClass("radio_on"); 
-        } 
-})
-// 职称
-$("input[name='title']").click(function(){ 
-    if($(this).hasClass("radio_on")){   
-            $(this).removeClass("radio_on"); 
-        }else{ 
-            $(this).addClass("radio_on").parents("div").siblings().find("input").removeClass("radio_on"); 
-        } 
-})
-// 卡片邮寄
-$("input[name='card']").click(function(){ 
-    if($(this).hasClass("radio_on")){   
-            $(this).removeClass("radio_on"); 
-        }else{ 
-            $(this).addClass("radio_on").parents("div").siblings().find("input").removeClass("radio_on"); 
-        } 
-})
-// 账单邮寄
-$("input[name='bill']").click(function(){ 
-    if($(this).hasClass("radio_on")){   
-            $(this).removeClass("radio_on"); 
-        }else{ 
-            $(this).addClass("radio_on").parents("div").siblings().find("input").removeClass("radio_on"); 
-        } 
-})
-// 账单类型
-$("input[name='billlist']").click(function(){ 
-    if($(this).hasClass("radio_on")){   
-            $(this).removeClass("radio_on"); 
-        }else{ 
-            $(this).addClass("radio_on"); 
-        } 
-})
-</script>
 </html>

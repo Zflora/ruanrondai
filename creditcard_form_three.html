@@ -11,7 +11,7 @@
 <link href="css/creditcard.css" rel="stylesheet" type="text/css">
 <!-- 城市 -->
 <link rel="stylesheet" href="css/LArea.min.css">
-<title>天使贷</title>
+<title>软融贷</title>
 </head>
 <body id="creditcard_form_two" class="mb120">
 <form action="">  
@@ -25,16 +25,16 @@
         <aside class="mb20 bgwh">
             <section class="bbe p0_24 ">
                 <span class="lh100 f30 g6 w200 dib">单位名称：</span>
-                <input type="text" class="f26 vtt w490" placeholder="请输入您工作的单位名称">
+                <input type="text" class="f26 w490" placeholder="请输入您工作的单位名称">
             </section>
             <section class=" bbe p0_24" id="number_text">
                 <span class="lh100 f30 g6 w200 dib">员工人数：</span>
-                <input type="text" class="f26 vtt w350" placeholder="请选择您工作单位员工人数" readonly="">
+                <input type="text" class="f26 w350" placeholder="请选择您工作单位员工人数" readonly="">
                 <img src="images/right_left.png" alt="" class="h30 mt35 r">
             </section>
             <section class=" bbe p0_24">
                 <span class="lh100 f30 g6 w200 dib">单位地址：</span>
-                <input type="text" class="f26 vtt w350" placeholder="请选择省/市" readonly="" id="demo1">
+                <input type="text" class="f26 w350" placeholder="请选择省/市" readonly="" id="demo1">
                 <img src="images/right_left.png" alt="" class="h30 mt35 r">
             </section>
             <section class=" bbe p0_24">
@@ -43,30 +43,30 @@
             </section>
             <section class=" bbe p0_24" id="character_text">
                 <span class="lh100 f30 g6 w200 dib">单位性质：</span>
-                <input type="text" class="f26 vtt w350" placeholder="请选择您工作单位的性质" readonly="">
+                <input type="text" class="f26 w350" placeholder="请选择您工作单位的性质" readonly="">
                 <img src="images/right_left.png" alt="" class="h30 mt35 r">
             </section>
             <section class="bbe p0_24 ">
                 <span class="lh100 f30 g6 w200 dib">任职部门：</span>
-                <input type="text" class="f26 vtt w490" placeholder="请输入您任职部门">
+                <input type="text" class="f26 w490" placeholder="请输入您任职部门">
             </section>
             <section class="bbe p0_24 ">
                 <span class="lh100 f30 g6 w200 dib">职位：</span>
-                <input type="text" class="f26 vtt w490" placeholder="请选择您的职位">
+                <input type="text" class="f26 w490" placeholder="请选择您的职位">
             </section>
             <section class=" bbe p0_24" id="position_text">
                 <span class="lh100 f30 g6 w200 dib">职位级别：</span>
-                <input type="text" class="f26 vtt w350" placeholder="请选择您的职位级别" readonly="">
+                <input type="text" class="f26 w350" placeholder="请选择您的职位级别" readonly="">
                 <img src="images/right_left.png" alt="" class="h30 mt35 r">
             </section>
             <section class=" bbe p0_24" id="money_text">
                 <span class="lh100 f30 g6 w200 dib">年薪：</span>
-                <input type="text" class="f26 vtt w350" placeholder="请选择您的年薪" readonly="">
+                <input type="text" class="f26 w350" placeholder="请选择您的年薪" readonly="">
                 <img src="images/right_left.png" alt="" class="h30 mt35 r">
             </section>
             <section class=" bbe p0_24" id="year_text">
                 <span class="lh100 f30 g6 w200 dib">任职年数：</span>
-                <input type="text" class="f26 vtt w350" placeholder="请选择您工作任职的年数" readonly="">
+                <input type="text" class="f26 w350" placeholder="请选择您工作任职的年数" readonly="">
                 <img src="images/right_left.png" alt="" class="h30 mt35 r">
             </section>
             <section class="bbe p0_24">
@@ -463,5 +463,31 @@ $(".shadeall").click(function(){
         'data': LAreaData //数据源
     });
     area1.value=[1,13,3];//控制初始位置，注意：该方法并不会影响到input的value
+
+
+    var input=document.getElementsByTagName("input");
+    var textarea=document.getElementsByTagName("textarea");
+    $("input").change(function(){
+        for(var i=0;i<input.length;i++){
+            if ($("input").eq(i).val()) {
+                $("input").eq(i).css("font-size","0.3rem");
+                console.log(1);
+            }else{
+                $("input").eq(i).css("font-size","0.26rem");
+                console.log(2);
+            }
+        }
+    })
+    $("textarea").change(function(){
+        for(var y=0;y<textarea.length;y++){
+            if ($("textarea").eq(y).val()) {
+                $("textarea").eq(y).css("font-size","0.3rem");
+                console.log(3);
+            }else{
+                $("textarea").eq(y).css("font-size","0.26rem");
+                console.log(4);
+            }
+        }
+    })
 </script>
 </html>

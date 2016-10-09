@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="css/LArea.min.css">
 <!-- 日期 -->
 <link href="css/mobiscroll.css" rel="stylesheet" type="text/css">
-<title>天使贷</title>
+<title>软融贷</title>
 </head>
 <body id="creditcard_form_one" class="mb120">
 <form action="">  
@@ -34,32 +34,32 @@
             </section>
             <section class="bbe p0_24 ">
                 <span class="lh100 f30 g6 w200 dib">中文姓名：</span>
-                <input type="text" class="f26 vm w350" placeholder="请输入您的中文姓名">
+                <input type="text" class="f26 w350" placeholder="请输入您的中文姓名">
             </section>
             <section class=" p0_24">
                 <span class="lh100 f30 g6 w200 dib">姓名拼音：</span>
-                <input type="text" class="f26 vm w350" placeholder="姓名拼音将刻印到卡片上">
+                <input type="text" class="f26 w350" placeholder="姓名拼音将刻印到卡片上">
             </section>
             <section class=" bbe p0_24">
                 <span class="lh100 f30 g6 w200 dib">身份证号：</span>
-                <input type="tel" class="f26 vm w350" placeholder="请输入姓名对应的身份证号">
+                <input type="tel" class="f26 w350" placeholder="请输入姓名对应的身份证号">
             </section>
             <section class=" p0_24">
                 <span class="lh100 f30 g6 w200 dib">证件有效期：</span>
-                <input type="text" class="f26 vm w350" placeholder="请选择证件有效期" readonly name="appDate" id="appDate" value="">
+                <input type="text" class="f26 w350" placeholder="请选择证件有效期" readonly name="appDate" id="appDate" value="">
             </section>
             <section class=" bbe p0_24">
                 <span class="lh100 f30 g6 w200 dib">所在城市：</span>
-                <input type="tel" class="f26 vm w350" placeholder="请选择你所在城市" readonly="" id="demo1">
+                <input type="tel" class="f26 w350" placeholder="请选择你所在城市" readonly="" id="demo1">
             </section>
             <section class=" p0_24">
                 <span class="lh100 f30 g6 w200 dib">手机号码：</span>
-                <input type="tel" class="f26 vm w350" placeholder="请输入您的手机号" maxlength="11">
+                <input type="tel" class="f26 w350" placeholder="请输入您的手机号" maxlength="11">
                 <a class="dib f30 g28D4D6 lh60 tc radius10">获取验证码</a>
             </section>
             <section class="p0_24">
                 <span class="lh100 f30 g6 w200 dib">验证码：</span>
-                <input type="tel" class="f26 vm w350" placeholder="请输入您收到的验证码" maxlength="11">
+                <input type="tel" class="f26 w350" placeholder="请输入您收到的验证码" maxlength="11">
             </section>
         </aside>
         <aside class="p40_24">
@@ -82,6 +82,18 @@
 <script src="js/mobiscroll.js" type="text/javascript"></script>
 <script src="js/data.js" type="text/javascript"></script>
 <script type="text/javascript">
+
+var i=0;
+var input=document.getElementsByTagName("input");
+$("input").change(function(){
+    for(var i=0;i<input.length;i++){
+        if ($("input").eq(i).val()) {
+            $("input").eq(i).css("font-size","0.3rem");
+        }else{
+            $("input").eq(i).css("font-size","0.26rem");
+        }
+    }
+})
 // 单选框
 $("input[type='radio']").click(function(){ 
     if($(this).hasClass("radio_on")){   
@@ -114,6 +126,8 @@ $("input[type='radio']").click(function(){
         'type': 2,
         'data': [provs_data, citys_data, dists_data]
     });
+    
+
     
 </script>
 </html>

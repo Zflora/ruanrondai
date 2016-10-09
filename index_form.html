@@ -9,7 +9,7 @@
 <link href="css/base.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/index.css" rel="stylesheet" type="text/css">
-<title>天使贷</title>
+<title>软融贷</title>
 </head>
 <body id="index_form" class="mb120">
     <!-- header -->
@@ -91,9 +91,8 @@ $("input[type='radio']").click(function(){
         } 
 })
 
-var i=0;
 var input=document.getElementsByTagName("input");
-$("input").focus(function(){
+$("input").change(function(){
     for(var i=0;i<input.length;i++){
         if ($("input").eq(i).val()) {
             $("input").eq(i).css("font-size","0.3rem");

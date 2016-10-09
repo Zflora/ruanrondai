@@ -9,7 +9,7 @@
 <link href="css/base.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/my.css" rel="stylesheet" type="text/css">
-<title>天使贷</title>
+<title>软融贷</title>
 </head>
 <body id="my_set_loanenter_form" class="mb120">
     <!-- header -->
@@ -23,11 +23,11 @@
         <aside class="mb20 bgwh">
             <section class="bbe p0_24">
                 <span class="lh100 f30 g6 w170 dib">审批机关：</span>
-                <input type="text" class="f26 vtt w490" placeholder="请输入汽车所有人姓名">
+                <input type="text" class="f26 w490" placeholder="请输入汽车所有人姓名">
             </section>
             <section class="bbe p0_24">
                 <span class="lh100 f30 g6 w170 dib">注册资金：</span>
-                <input type="tel" class="f26 vtt w490" placeholder="请输入注册资金">
+                <input type="tel" class="f26 w490" placeholder="请输入注册资金">
             </section>
         </aside>
         <aside class="mb20 bgwh p40_24 tc">
@@ -79,6 +79,17 @@ $(function(){
             }else{ 
                 $(this).addClass("radio_on"); 
             } 
+    })
+
+    var input=document.getElementsByTagName("input");
+    $("input").change(function(){
+        for(var i=0;i<input.length;i++){
+            if ($("input").eq(i).val()) {
+                $("input").eq(i).css("font-size","0.3rem");
+            }else{
+                $("input").eq(i).css("font-size","0.26rem");
+            }
+        }
     })
 })
 </script>
