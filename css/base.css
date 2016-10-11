@@ -90,6 +90,7 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .lh80{line-height: 0.8rem}
 .lh100{line-height: 1rem;}
 .lh160{line-height: 1.6rem;}
+.lh45{line-height: 0.45rem}
 /* margin */
 .m0{margin:0!important;}
 .mt88{margin-top: 0.88rem}
@@ -138,6 +139,8 @@ div.dib{*display:inline; *zoom:1;}/* other block level tag(eg. p, li, h1~h6), us
 .pl50{padding-left: 0.5rem;}
 .pt100{padding-top: 1rem}
 .pt40{padding-top: 0.4rem}
+.pb34{padding-bottom: 0.34rem;}
+.mb34{margin-bottom: 0.34rem}
 /* border-color name rule: border(b)-position(l/r/t/b/d)-width(null/2)-style(null/sh)-color(first one letter/first two letter) |-> All colors are safe color*/
 .bdc{border:1px solid #ccc;}
 .bbe{border-bottom:1px solid #eee;}

@@ -24,7 +24,7 @@
 #my_set_loanenter main ul li span{width: 0.6rem;line-height: 0.6rem;text-align: center;display: inline-block;margin-bottom: 0.3rem}
 #my_set_loanenter main ul li:nth-child(even){background: url(../images/my/next.png) no-repeat;background-size: 100% 100%;width: 1.45rem;height: 0.17rem;vertical-align: 0.8rem}
 /*my_loanadmin*/
-#my_loanadmin h1,#my_creditcardadmin h1{width: 2rem;box-sizing: border-box;overflow: hidden;border-right: 1px solid #28d4d6;color: #28d4d6;float: left;background: #fff;}
+#my_loanadmin h1,#my_creditcardadmin h1{width: 2rem;box-sizing: border-box;overflow: hidden;border-right: 1px solid #28d4d6;color: #28d4d6;float: left;background: #fff;height: 0.6rem;}
 #my_loanadmin h1:last-child,#my_creditcardadmin h1:last-child{border:0;}
 .h1_on{color: #fff!important;background: #28D4D6!important;}
 #my_loanadmin main>.bd28d4d6,#my_creditcardadmin main>.bd28d4d6{width:6rem;margin: 0 auto;border:1px solid #28d4d6;height: 0.6rem}
