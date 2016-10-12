@@ -13,6 +13,9 @@ img{width: auto;}
 button{overflow: visible;}
 input{line-height: inherit;}
 hr{border-bottom: 1px solid #eee;}
+
+#imgdiv,#imgdiv_zheng,#imgdiv_fan,#imgdiv1,#imgdiv2,#imgdiv3{width: 3rem;height: 2.1rem;overflow: hidden;}
+#imgShow,#imgShow_zheng,#imgShow_fan,#imgShow3,#imgShow2,#imgShow1{width: 3rem;}
 /*底部按钮*/
 .footer_btn{bottom: 0;background: #28D4D6;width: 100%;line-height: 0.98rem}
 .btn{width: 4rem;line-height:  0.73rem;background: #28D4D6;border-radius: 0.08rem;}
