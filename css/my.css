@@ -33,7 +33,9 @@
 #my_creditcardadmin .ml130{margin-left: 2.5rem}
 #my_creditcardadmin section.bgwh{position: absolute;right: 0;left: 0;bottom: 0;top: 1.9rem}
 /*my_creditcardadmin_usermain*/
-#my_creditcardadmin_usermain #reject,#my_creditcardadmin_usermain #pass{width: 2.4rem;display: inline-block;}
+#my_creditcardadmin_usermain #reject,#my_creditcardadmin_usermain #pass,#my_loanadmin_usermaintwo #reject,#my_loanadmin_usermaintwo #pass{width: 2.4rem;display: inline-block;}
 .zx2{width: 5.6rem;left: 50%;margin-left: -2.8rem;padding-top: 0.4rem;bottom: 5rem;padding-bottom: 0.2rem}
-#my_creditcardadmin_usermain #reject_on a,#my_creditcardadmin_usermain #pass_on a{width: 49.5%;display: inline-block;float: left;}
-#my_creditcardadmin_usermain #reject_on .cancel,#my_creditcardadmin_usermain #pass_on .cancel{border-right: 1px solid #eee;}
+#my_creditcardadmin_usermain #reject_on a,#my_creditcardadmin_usermain #pass_on a,#my_loanadmin_usermaintwo #reject_on a,#my_loanadmin_usermaintwo #pass_on a{width: 49.5%;display: inline-block;float: left;}
+#my_loanadmin_usermaintwo #reject_on .cancel,#my_loanadmin_usermaintwo #pass_on .cancel,#my_creditcardadmin_usermain #reject_on .cancel,#my_creditcardadmin_usermain #pass_on .cancel{border-right: 1px solid #eee;}
+/*#my_loanadmin_usermaintwo*/
+#my_loanadmin_usermaintwo .zx2{bottom: 3rem}

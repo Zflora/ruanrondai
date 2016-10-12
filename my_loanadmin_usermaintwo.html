@@ -42,10 +42,58 @@
                 <label for="up_img_fan" class="dib" id="imgdiv_fan"><img src="images/index/car_news.png" alt="" id="imgShow_fan" class="h210"></label>
             </div>
         </aside>
-        <aside class="mt108 btn auto" onclick="javascript:window.location.href='my_loanadmin_exa.html','_self'">
+                <aside class="mt108 btn ml75" id="reject">
+            <p class="f36 wh tc">驳回</p>
+        </aside>
+        <aside class="mt108 btn ml110" id="pass">
             <p class="f36 wh tc">审批</p>
         </aside>
     </main>
+
+    <!-- 遮罩 -->
+    <aside class="shadeall dn"></aside>
+    <!-- 遮罩结束 -->
+    <aside class="bgwh radius10 abs zx2 dn" id="pass_on">
+        <section class="tc">
+            <p class="f32 mb30">确定要通过用户申请</p>
+            <p class="f32 mb30">通过后将为用户下发此信用卡</p>
+            <hr class="mb20">
+            <div class="">
+                <a class="pct50 f36 g28D4D6 lh60 cancel">取消</a>
+                <a class="pct50 f36 g28D4D6 lh60" onclick="javascript:window.location.href='my_loanadmin_exa.html','_self'">确定</a>
+            </div>
+        </section>
+    </aside>
+    <aside class="bgwh radius10 abs zx2 dn" id="reject_on">
+        <section class="tc">
+            <p class="f32 mb30">确定要驳回用户申请</p>
+            <p class="f32 mb30">驳回后用户无法使用此信用卡</p>
+            <hr class="mb20">
+            <div class="">
+                <a class="pct50 f36 g28D4D6 lh60 cancel">取消</a>
+                <a class="pct50 f36 g28D4D6 lh60" onclick="javascript:window.location.href='my_loanadmin.html','_self'">确定</a>
+            </div>
+        </section>
+    </aside>
+</body>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
-</html>
+<script type="text/javascript">
+$("#pass").click(function(){
+    $(".shadeall").show();
+    $("#pass_on").show();
+    document.documentElement.style.overflow='hidden';
+    document.body.style.overflow='hidden';
+})
+$("#reject").click(function(){
+    $("#reject_on").show();
+    $(".shadeall").show();
+    document.documentElement.style.overflow='hidden';
+    document.body.style.overflow='hidden';
+})
+$(".cancel").click(function(){
+    $(".dn").hide();
+    document.documentElement.style.overflow='auto';
+    document.body.style.overflow='auto';
+})
+</script>
