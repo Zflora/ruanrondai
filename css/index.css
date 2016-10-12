@@ -21,3 +21,5 @@
 #index_loan_form .shadow li{height: 0.8rem}
 /*index_form_loan*/
 #imgdiv_fan,#imgdiv_zheng,#imgdiv{width: 2.6rem}
+/*index_loan_unsuccess_form*/
+#index_loan_unsuccess_form .zx2{width: 5.6rem;left: 50%;margin-left: -2.8rem;padding-top: 0.4rem;bottom: 6rem;padding-bottom: 0.2rem}
